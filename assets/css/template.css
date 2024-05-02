@@ -1,0 +1,477 @@
+* {
+    font-family: Arial;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+}
+header {
+    display: flex;
+    justify-content: center;
+    height: 120px;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 990px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.menu {
+    display: flex;
+    align-items: center;
+}
+nav ul,
+nav li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul {
+    display: flex;
+}   
+nav a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #727272;
+
+} 
+nav .active a,
+nav a:hover {
+    background-color: #39aae1;
+    color: #FFFFFF;
+}
+/*Imagem aqui pois n tem informação importante alguma nela para ficar no Html e ajudar os motores de busca
+é só uma imagem ilustrativa focada no Style, por isso esta no css*/
+#banner {
+    display: flex;
+    justify-content: center;
+    background-image: url('../images/img1.jpg');
+    background-position: center;
+    background-size: cover; 
+    height: 670px;  
+}
+.column {
+    flex-direction: column;
+}
+.banner_headline {
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+.banner_headline h1 {
+    color: #FFFFFF;
+    font-size: 70px;
+    text-shadow: 0px 1px 0px #555555;
+    margin: 0;
+    padding: 0;
+    max-width: 350px;
+}
+.banner_headline h2 {
+    color: #FFFFFF;
+    font-size: 21px;
+    text-shadow: 0px 1px 0px #555555;
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+    max-width: 350px;
+}
+
+.banner_options {
+    height: 210px;
+    display: flex;
+}
+
+.banner1,
+.banner2,
+.banner3 {
+    flex: 1;
+    color:#FFFFFF;
+    padding: 20px;
+}
+.banner1 {
+    background-color: #39aae1;
+}
+.banner2 {
+    background-color: #0079c7;
+}
+.banner3 {
+    background-color: #2b4c99;
+}
+.banner_title {
+    font-size: 21px;
+}
+.banner_desc {
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+.banner_options a {
+    display: inline-block;
+    border: 1px solid #FFFFFF;
+    padding: 5px;
+    color: #FFFFFF;
+    font-size: 13px;
+    text-decoration: none;
+}
+.banner_options a::after {
+    content: '\2192';
+}
+.banner_desc1, .banner_desc2, .banner_desc3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;/*Aplica o espaçamento no Span, pois está dentro das Divs*/
+    margin-top: 20px;
+    border-bottom: 2px solid #0077c754;
+    padding-bottom: 10px;
+    font-size: 12px;
+}
+.banner3 .banner_title {
+    margin-bottom: 10px;
+}
+#geral {
+    display: flex;
+    justify-content: center;
+}
+#geral section {
+    flex: 2;
+}
+#geral aside {
+    flex: 1;
+}
+.widget_title{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.widget_title_text {
+    color: #000000;
+    font-size: 21px;
+    font-weight: bold;
+}
+.widget_title_bar {
+    width: 50px;
+    height: 2px;
+    background-color: #36a9e1;
+    margin-top: 10px;
+}
+.widget_body_departments {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.square {
+    width: 150px;
+    height: 150px;
+    background-color: #42b3e5;
+}
+
+.widget_body_appointment p {
+    font-size: 14px;
+    color: #909090;
+    line-height: 20px;
+    border-bottom: 1px solid #a7acb8;
+    padding-top: 6px;
+    padding-bottom: 25px;
+}
+
+.phone,
+.email,
+.contact {
+    border-bottom: 1px solid #a7acb8;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    color: #888888;
+}
+
+.media_icons a {
+    text-decoration: none;
+}
+
+.media_icons b {
+    color: black;
+}
+
+.media_icons span {
+    margin-right: 5px;
+}
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+article {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 20px;
+}
+article a {
+    text-decoration: none;
+}
+article .news_data {
+    display: flex;
+}
+article .news_posted_at {
+    background-color: #2b4c99;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 10px;
+    margin-right: 2px;
+}
+article .news_coments {
+    background-color: #39aae1;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 10px;
+}
+article .news_thumbnail {
+    margin-top: 30px;
+}
+article .news_thumbnail img {
+    width: 100%;
+    height: auto;
+}
+article .news_title {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: #000000;
+    font-size: 23px;
+}
+article .news_resume {
+    color: #5c5c5c;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+footer {
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+}
+.footer_menu {
+    display: flex;
+}
+.fm1, .fm2, .fm3 {
+    flex: 1;
+    color: #ffffff;
+}
+.fm1 {
+    background-color: #39aae1;
+}
+.fm2 {
+    background-color: #0079c7;
+}
+.fm3 {
+    background-color: #2b4c99;
+}
+.footer_menu a {
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #ffffff;
+    font-size: 14px;
+}
+.footer_menu a span {
+    font-size: 23px;
+}
+.footer_menu a p::after {
+    content: '\2192';
+}
+.footer_area {
+   display: flex;
+}
+.footer_areaitem {
+    flex:1;
+    color: #ffffff;
+}
+.flexColumn {
+    flex-direction: column;
+}
+footer .widget_title_text {
+    color: #ffffff;
+}
+.footer_copy {
+    border-top: 1px solid #2c2c2c;
+    height: 40px;
+    line-height: 40px;
+    color: #5c5c5c;
+    font-size: 12px;
+    margin-top: 30px;
+}
+.widget_body_description {
+    color: #8A8A8A;
+    font-size: 13px;
+    line-height: 20px;
+  }
+  
+  .widget_body_box {
+    display: flex;
+    flex: 1;
+    color: #8A8A8A;
+    font-size: 13px;
+  }
+  
+  .widget_body_address {
+    flex: 1;
+    line-height: 5px;
+  }
+  
+  .widget_body_contact {
+    flex: 1;
+    line-height: 5px;
+    margin-top: 18px;
+  }
+  
+  .widget_body_thumbnail {
+    display: flex;
+    width: 35px;
+    height: 35px;
+  }
+  
+  .widget_body_thumbnail a img {
+    margin-top: 10px;
+    margin-right: 5px;
+    display: flex;
+    width: 35px;
+    height: 35px;
+  }
+  
+  .widget_body_latest_posts,
+  .widget_body_latest_tweets {
+    font-size: 13px;
+    margin-right: 15px;
+    line-height: 15px;
+  }
+  
+  .widget_body_latest_posts a {
+    display: flex;
+    justify-content: flex-start;
+    text-decoration: none;
+    color: #FAFAFA;
+    margin-top: 5px;
+  }
+  
+  .widget_body_latest_posts p {
+    margin-right: 5px;
+    margin-top: 0px;
+    line-height: 20px;
+  }
+  
+  .widget_body_latest_posts span {
+    color: #0079C7;
+    margin-top: 3px;
+  }
+  
+  .widget_body_latest_tweets {
+    font-size: 13px;
+  }
+  
+  .widget_body_latest_tweets span {
+    color: #0079C7;
+  }
+  
+  .widget_body_latest_tweets a {
+    display: flex;
+    justify-content: flex-start;
+    text-decoration: none;
+    color: #8A8A8A;
+    margin-top: 5px;
+  }
+  
+  .widget_body_latest_tweets p {
+    margin-right: 5px;
+    margin-top: 0px;
+    line-height: 20px;
+  }
+  
+  .widget_body_latest_tweets span {
+    color: #0079C7;
+  }
+.widget_body_latest_posts a::before,
+.widget_body_latest_tweets a::before {
+    content: '\2192';
+    margin-right: 5px;
+}
+.menuMobile {
+    display: none;
+    height: 40px;
+    width: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+.mm_line {
+    height: 3px;
+    background-color: #39aae1;
+}
+
+@media (max-width: 900px) {
+    .banner_headline {
+        padding: 20px;
+    }
+     .banner_headline h1 {
+         font-size: 55px;
+     }
+     .banner_headline h2 {
+        font-size: 17px;
+        color: #0079c7;
+        text-shadow: none;
+     }
+     .banner_options {
+        height: auto;
+        flex-direction: column;
+        margin-top: 50px;
+     }
+     #geral section,
+     #geral aside {
+        padding: 20px; 
+     }
+     .footer_menu {
+        flex-direction: column;
+     }
+     .footer_area {
+        flex-direction: column;
+        padding: 20px;
+     }
+     .footer_copy {
+        padding-left: 20px;
+     }
+     #banner{
+        margin-bottom: 100px;
+     }
+     header {
+        flex-direction: row;
+     }
+     nav ul {
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+     }
+     header {
+        height: auto;
+     }
+     .logo {
+        padding-left: 20px;
+     }
+     .menuMobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+@media (max-width: 530px) {
+    #banner{
+        margin-bottom: 150px;
+     }
+    aside {
+        display: none;
+    }
+}
